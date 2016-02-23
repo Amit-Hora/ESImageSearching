@@ -10,10 +10,10 @@ See http://demo.elasticsearch-image.com for a demo of the plugin
 
 In order to install the plugin, simply run: bin/plugin -install com.github.kzwang/elasticsearch-image/1.2.0.
 
-
-
 You need to cerate index with name images  in ES with following mapping
+```
 {
+
  "mappings" :{
     "image": {
         "properties": {
@@ -37,6 +37,8 @@ You need to cerate index with name images  in ES with following mapping
             }
         }
     }
-}}
+     }
 
+}
+```
 Edit env.properties file under resource folder to point to your ES/Hadoop
